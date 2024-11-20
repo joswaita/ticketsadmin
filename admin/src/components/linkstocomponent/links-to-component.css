@@ -1,0 +1,36 @@
+.links-to-component {
+  padding: 0; /* Remove padding around the component */
+}
+
+.links {
+  display: flex;
+  flex-direction: row; /* Stack links vertically */
+  gap: 0; /* No gaps between list items */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.links li {
+  list-style: none;
+  color: #0000ff; /* Blue text */
+  padding: 8px 8px; /* Consistent padding for clickable area */
+  transition: color 0.3s, background-color 0.3s;
+  font-size: 1rem; /* Standardized font size */
+}
+
+.links li:hover {
+  cursor: pointer;
+  color: #ffffff; /* White text on hover */
+  color: #fab300fc; /* Gold background for hover effect */
+}
+
+/* Adjust Chevron Icon */
+.links li svg {
+  margin-left: 4px; /* Spacing between text and icon */
+  vertical-align: middle; /* Align icon with text */
+}
+
+/* Remove margins */
+.links-to-component + * {
+  margin-top: 0;
+}

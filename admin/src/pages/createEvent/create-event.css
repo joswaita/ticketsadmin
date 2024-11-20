@@ -1,0 +1,9 @@
+.create-event-style {
+  box-sizing: border-box;
+}
+.create-event {
+  display: flex;
+}
+.create-event-details {
+  margin-left: 8px;
+}

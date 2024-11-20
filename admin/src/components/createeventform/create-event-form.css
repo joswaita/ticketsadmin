@@ -1,0 +1,100 @@
+.create-event-form {
+  max-width: 80%; /* Form occupies a larger area initially */
+  width: 900px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  min-height: 700px; /* Ensure the form has a minimum height */
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.form-section input,
+.react-quill {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.react-quill {
+  min-height: 200px; /* Ensure React Quill starts with a reasonable height */
+  max-height: 300px; /* Prevent it from growing indefinitely */
+}
+
+.time-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.time-section div {
+  flex: 1;
+}
+
+.ticket-categories .ticket-category {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.ticket-categories .add-more {
+  margin-top: 10px;
+  background-color: #fab300fc;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+}
+
+.ticket-categories .add-more:hover {
+  background-color: #c99202;
+}
+
+.location-fields {
+  display: flex;
+  gap: 15px;
+}
+
+.event-banner {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  background-color: #fab300fc;
+  color: #ffffff;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #c99202;
+}
