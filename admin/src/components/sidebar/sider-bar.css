@@ -1,0 +1,99 @@
+/* General sidebar styling */
+.side-bar {
+  width: max-content;
+  max-width: 200px;
+  padding: 15px;
+  background-color: #888; /* Gray background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Grayish shadow */
+  font-family: Arial, sans-serif;
+}
+
+.sidebar-component {
+  margin-bottom: 15px; /* Consistent spacing between components */
+  position: relative; /* Needed for absolute positioning of subitems */
+}
+
+/* Sidebar items */
+.siderbar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.siderbar-item:hover {
+  background-color: #fab300fc; /* Gold hover effect */
+  color: #ffffff; /* White text on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-icons {
+  font-size: 1rem;
+  color: #ffffff; /* White icon color */
+}
+
+.siderbar-item p {
+  margin: 0;
+  flex-grow: 1;
+  color: #ffffff; /* White text */
+  font-size: 1rem;
+}
+
+/* Chevron hover effect */
+.sidebar-icons.chevron-right {
+  transition: transform 0.3s;
+}
+
+.siderbar-item:hover .chevron-right {
+  transform: rotate(360deg);
+  color: #ffffff; /* White for hover */
+}
+
+/* Subitems container */
+.sidebar-subitems {
+  display: none; /* Initially hidden */
+  position: absolute;
+  left: 100%; /* Position to the right of the chevron */
+  top: 0;
+  background-color: #ffffff; /* White background */
+  color: #818181; /* Gray text */
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Grayish shadow */
+  min-width: 150px;
+  z-index: 10; /* Ensure it appears above other content */
+}
+
+.sidebar-subitems ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-subitems li {
+  padding: 5px 0;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 4px;
+}
+
+.sidebar-subitems li:hover {
+  background-color: #fab300fc; /* Gold hover effect */
+  color: #ffffff; /* White text on hover */
+}
+
+/* Persist hover effect for subitems */
+.sidebar-component:hover .sidebar-subitems {
+  display: block; /* Show subitems when parent is hovered */
+}
+
+/* Section headers */
+h4 {
+  font-size: 1.1rem;
+  color: #ffffff; /* White for section headers */
+  margin-bottom: 15px;
+}
